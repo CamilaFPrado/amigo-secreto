@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container-wrapper">
+        <div class="container">
+            <h1>Amigo Secreto</h1>
+            <p><strong>Adicione os amigos e faça o sorteio!</p></strong>
+            
+            <div class="input-group">
+                <input type="text" id="amigo" placeholder="Digite um nome">
+                <button onclick="adicionarAmigo()">Adicionar</button>
+                <p id="mensagem" class="mensagem"></p>
+
+            </div>
+            
+            <ul id="listaAmigos"></ul>
+            
+            <div class="buttons">
+                <button onclick="sortearAmigo()" class="sortear">Sortear</button>
+                <button onclick="reiniciarLista()" class="reiniciar">Reiniciar Lista</button>
+            </div>
+            <div class="resultado"> <h2>Resultado do Sorteio:</h2>
+                <p id="resultado"></p>
+                
+                <h2>Instruções:</h2>
+                <ul class="instructions">
+                    <li>1. Adicione os participantes.</li>
+                    <li>2. Clique em "Sortear" para distribuir os amigos secretos.</li>
+                    <li>3. O sorteio garante que ninguém pegue a si mesmo.</li>
+                    <li>4. Use "Reiniciar Lista" para começar de novo.</li>
+                </ul>
+            </div></div>
+            
+
+        <div class="image-container">
+            <img src="assets/background.svg" alt="Amigo Secreto">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

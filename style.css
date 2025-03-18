@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  min-height: 100vh;
+  align-items: auto;
+  justify-content: center;
+  margin: 0;
+}
+
+.container-wrapper {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  flex: 1;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 66px;
+  color: #68206c;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 200;
+  font-family: "Luckiest Guy", cursive;
+}
+
+p {
+  font-size: 18px;
+  color: #444;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  background: #68206c;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #4e1550;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-buttom: 50px;
+  margin: 0px;
+}
+
+.sortear {
+  background: #48bb78;
+}
+
+.sortear:hover {
+  background: rgba(37, 97, 17, 0.81);
+}
+
+.reiniciar {
+  background: #c53030;
+}
+
+.reiniciar:hover {
+  background: rgb(237, 69, 86);
+}
+
+.resultado {
+  margin-top: 20px;
+  margin-left: 5px;
+  text-align: center;
+}
+
+.mensagem {
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+ul li {
+  background: #f9f9f9;
+  color: black;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.image-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  width: 80%;
+  opacity: 0.7;
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  .container-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .container,
+  .image-container {
+    width: 100%;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  input {
+    width: 100%;
+  }
+}
